@@ -13,16 +13,83 @@
     margin: 0 auto;
 }
 
+/* utilities */
+
+.red-number{
+    color:red
+    
+}
+
+.b-text{
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.sostenibilità{
+    color:white;
+    background-color:#00875A;
+    font-weight: bold;
+    font-size: 12px;
+    padding:2px;
+    position:relative;
+    bottom: 10px;
+
+}
+
+.big-discount{
+    color: white;
+    background-color:#EB0037;
+    font-weight: bold;
+    font-size: 12px;
+    padding:2px;
+    position:relative;
+    text-align: left;
+}
+    
+
+.small-discount{
+    color: white;
+    background-color:#EB0037;
+    font-weight: bold;
+    font-size: 12px;
+    padding:2px;
+    position:relative;
+}
+
+    
+.like{
+    background-color: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+}
+
+
 
 /* main content */
 
-.model-card{
-    height: 300px;
-    width: 200px;
-    margin: auto;
+.card{
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
     background-image: url(../img/1.webp);
     background-size: cover;
     background-color: #aaa;
-    position:absolute;
+    /* position:absolute; */
+     
     
+}
+
+/* PSEUDO */
+.card:hover::after{
+    font-size: 3em;
+    background-color: white;
+    color:red;
+    position: absolute;
+
+
 }
