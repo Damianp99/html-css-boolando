@@ -10,11 +10,15 @@
 .container{
     background-color: #eee;
     max-width: 1000px;
-    height: 1000px;
     margin: 0 auto;
 }
 
+
 /* utilities */
+
+.text{
+    margin-left: 15px;
+}
 
 .red-number{
     color:red
@@ -74,9 +78,15 @@
 
     
 .like{
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height:30px;
     background-color: white;
     color: black;
-    position: relative;
+    position: absolute;
+    right: 0;
 
 }
 
@@ -86,6 +96,8 @@
 
 .model{
     display: inline-block;
+    width: calc(100% / 3 - 3px);
+    cursor: pointer;
 }
 
 .card{
@@ -121,11 +133,37 @@
 }
 
 /* PSEUDO */
-.card:hover::after{
-    font-size: 3em;
+.like:hover{
+    font-size: 20px;
     background-color: white;
     color:red;
-    position: absolute;
+}
 
+.levis:hover{
+    background-image: url(../img/1b.webp);
+
+}
+
+.guess:hover{
+    background-image: url(../img/2b.webp);
+}
+
+.sugar:hover{
+    background-image: url(../img/3b.webp);
+
+}
+
+.another-levis:hover{
+    background-image: url(../img/4b.webp);
+
+}
+
+.maya:hover{
+    background-image: url(../img/5b.webp);
+
+}
+
+.esprit:hover{
+    background-image: url(../img/6b.webp);
 
 }
